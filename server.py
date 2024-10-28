@@ -41,7 +41,7 @@ def start_server():
         # Layer 1: Physical Layer
         # The physical hardware transmits the data between devices (Wi-Fi or Ethernet).
         message = input(f"{server_name}: ")
-        conn.send(message.encode('utf-8'))  
+        conn.send(f"{server_name}: {message}".encode('utf-8'))  # Send message with server's name
 
     conn.close()  
 

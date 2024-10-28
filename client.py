@@ -33,7 +33,7 @@ def start_client():
             print("Server disconnected.")
             break
 
-        print(f"Server: {data}")
+        print(data)  # Print the full message including the server's name
 
     client_socket.close() 
 
